@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // =======================================================
-    // ** BU BÖLÜMLERİ KENDİ BİLGİLERİNİZLE GÜNCELLEYİN **
+    // ** BU BÖLÜMLER GÜNCELLENDİ **
     // =======================================================
     // 1. DİKKAT: Bu URL Discord Webhook URL'niz olmalıdır.
     const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1431323542892318892/ucAICMTpz9q_LXh3k0RvDbhoirPSmJR2uQHHvxl8UTAJnbRU8VsbxmXr4LyxGOO3GYn4"; 
@@ -32,6 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: "Super Spirit Pain", robux: 294, image: "superspiritpain.png", type: "fruit" },
         { name: "Fast Boats", robux: 311, image: "fastboats.png", type: "gamepass" }
     ];
+
+    // ... (Geri kalan tüm JavaScript kodu aynı kalmalıdır) ...
+    // Modalların açılıp kapanması ve webhook gönderme mantığı buraya gelir.
+    
+    // (*** Geri kalan JavaScript kodunu buraya ekleyin ***)
+    
+// (Önceki cevabımdaki tüm kodu alıp bu dosyaya yapıştırdığınızdan emin olun.)
+// ... (Tüm fonksiyonlar ve olay dinleyicileri) ...
 
     // DOM Elementleri
     const listingContainer = document.getElementById('fruits-listing');
@@ -91,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target === modal) { modal.style.display = 'none'; }
     });
     
-    // Satın Alma Onayı ve Webhook Gönderimi (Basitleştirilmiş ve Sabit Metin)
+    // Satın Alma Onayı ve Webhook Gönderimi
     confirmButton.addEventListener('click', async () => {
         const username = contactInput.value.trim();
 
@@ -101,10 +109,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Webhook Payload'ı
         const payload = {
-            content: "@here", // Yöneticilere bildirim gitmesi için
+            content: "@here",
             embeds: [{
                 title: "🚨 NEW PURCHASE REQUEST 🚨",
-                color: 3066993, // Yeşil
+                color: 3066993,
                 fields: [
                     { name: "Item", value: selectedFruit.name, inline: true },
                     { name: "Price", value: `${selectedFruit.price} Robux`, inline: true },
