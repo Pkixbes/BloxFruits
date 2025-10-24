@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #0d1117; /* Koyu arka plan */
+    background-color: #0d1117; 
     color: #c9d1d9;
     line-height: 1.6;
 }
@@ -18,10 +18,10 @@ body {
     margin: 0 auto;
 }
 
-/* Header Stilleri */
+/* Header Stilleri - padding geri alındı */
 header {
     background: #161b22;
-    padding: 60px 0 30px 0; /* Dil seçici için üst boşluk artırıldı */
+    padding: 30px 0; /* Normal padding */
     text-align: center;
     border-bottom: 3px solid #007bff;
     margin-bottom: 20px;
@@ -38,38 +38,7 @@ header p {
     color: #8b949e;
 }
 
-/* YENİ: Dil Seçici Stili (Bayrak Butonları) */
-.lang-selector {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 100;
-    display: flex;
-    gap: 5px;
-}
-
-.lang-button {
-    background: #161b22;
-    color: #c9d1d9;
-    border: 1px solid #30363d;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.2s, border-color 0.2s;
-    font-size: 1em;
-}
-
-.lang-button:hover {
-    background-color: #21262d;
-    border-color: #58a6ff;
-}
-
-.lang-button.active {
-    background-color: #58a6ff; /* Mavi vurgu */
-    border-color: #58a6ff;
-    color: white;
-    font-weight: 600;
-}
+/* --- DİL SEÇİCİ STİLLERİ KALDIRILDI --- */
 
 /* Ürün Listeleme (Grid) */
 .grid-container {
@@ -79,7 +48,7 @@ header p {
     padding: 20px 0;
 }
 
-/* Ürün Kartı Stilleri */
+/* Ürün Kartı Stilleri (Aynı) */
 .product-card {
     background: #161b22;
     border: 1px solid #30363d;
@@ -111,11 +80,11 @@ header p {
 .product-name {
     font-size: 1.5em;
     margin-bottom: 10px;
-    color: #4CAF50; /* Fruit'ler için yeşil vurgu */
+    color: #4CAF50;
     font-weight: 600;
 }
 
-/* Fiyat ve Robux İkonu */
+/* Fiyat ve Robux İkonu (Aynı) */
 .price-container {
     display: flex;
     justify-content: center;
@@ -132,7 +101,7 @@ header p {
     margin-left: 5px;
 }
 
-/* Satın Alma Butonu */
+/* Satın Alma Butonu (Aynı) */
 .buy-button {
     background-color: #007bff;
     color: white;
@@ -152,7 +121,7 @@ header p {
     background-color: #0056b3;
 }
 
-/* Footer Stilleri */
+/* Footer Stilleri (Aynı) */
 footer {
     text-align: center;
     padding: 20px 0;
@@ -162,7 +131,7 @@ footer {
     color: #8b949e;
 }
 
-/* Modal Stilleri */
+/* Modal Stilleri (Aynı) */
 .modal {
     display: none; 
     position: fixed; 
@@ -211,7 +180,7 @@ footer {
 }
 
 #modal-confirm-button {
-    background-color: #4CAF50; /* Yeşil buton */
+    background-color: #4CAF50;
     color: white;
     border: none;
     padding: 10px 20px;
