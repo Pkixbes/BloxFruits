@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blox Fruits Pazarı | Robux ile Fruit Satın Al</title>
+    <title id="page-title">Blox Fruits Pazarı | Robux ile Fruit Satın Al</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_2022_logo.svg" type="image/svg+xml">
@@ -11,34 +11,43 @@
 <body>
 
     <header>
+        <div class="lang-selector">
+            <label for="language-select" class="sr-only">Dil Seç</label>
+            <select id="language-select">
+                <option value="tr">Türkçe (TR)</option>
+                <option value="en">English (EN)</option>
+            </select>
+        </div>
         <div class="container">
-            <h1>Blox Fruits **Pazarı**</h1>
-            <p>En nadir Fruit'leri ve Gamepass'leri en iyi Robux fiyatlarıyla bul!</p>
+            <h1 id="header-main">Blox Fruits **Pazarı**</h1>
+            <p id="header-sub">En nadir Fruit'leri ve Gamepass'leri en iyi Robux fiyatlarıyla bul!</p>
         </div>
     </header>
 
     <main class="container">
         <section id="fruits-listing" class="grid-container">
-            <div class="product-card" data-name="Leopard">
-                <div class="product-image-container">
-                    <img src="images/westdragon.png" alt="Dragon Fruit" class="product-image">
-                </div>
-                <h2 class="product-name">Batı Ejderhası</h2>
-                <div class="price-container">
-                    <span class="robux-price">2632</span>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Robux_icon.svg/100px-Robux_icon.svg.png" alt="Robux" class="robux-icon">
-                </div>
-                <button class="buy-button">Satın Al</button>
-            </div>
             </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Blox Fruits Pazarı. Tüm Hakları Saklıdır. | Bu site Roblox veya Blox Fruits ile resmi olarak bağlantılı değildir.</p>
+            <p id="footer-text">&copy; 2025 Blox Fruits Pazarı. Tüm Hakları Saklıdır. | Bu site Roblox veya Blox Fruits ile resmi olarak bağlantılı değildir.</p>
         </div>
     </footer>
 
+    <div id="purchase-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <h2 id="modal-title">Satın Alma İşlemi</h2>
+            <p id="modal-text-1">Seçilen Ürün: <strong id="modal-fruit-name"></strong></p>
+            <p id="modal-text-2">Lütfen iletişime geçmek için Discord/Roblox kullanıcı adınızı girin:</p>
+            
+            <input type="text" id="contact-username" placeholder="Discord/Roblox Kullanıcı Adınız">
+            
+            <button id="modal-confirm-button" data-discord-url="KENDİ_DISCORD_DAVET_LINKINIZ">Talebi Gönder & Discord'a Git</button>
+            <p id="modal-warning">Not: Satın alma, Discord üzerinden yöneticilerle iletişim kurularak tamamlanacaktır.</p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
