@@ -1,139 +1,94 @@
-/* Genel Ayarlar ve Font */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* ... (Önceki CSS kodunuz buraya gelir) ... */
+
+/* Yeni: Dil Seçici Stili */
+.lang-selector {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
 }
 
-body {
-    font-family: 'Poppins', sans-serif; /* Popüler ve modern bir font */
-    background-color: #0d1117; /* GitHub koyu tema rengine yakın */
-    color: #c9d1d9;
-    line-height: 1.6;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Başlık (Header) Stilleri */
-header {
-    background: #161b22; /* Daha koyu bir başlık rengi */
-    padding: 30px 0;
-    text-align: center;
-    border-bottom: 3px solid #007bff; /* Mavi vurgu */
-    margin-bottom: 20px;
-}
-
-header h1 {
-    font-size: 2.8em;
-    color: #ffffff;
-    font-weight: 800;
-}
-
-header p {
-    font-size: 1.2em;
-    color: #8b949e;
-}
-
-/* Ürün Listeleme (Grid) */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px;
-    padding: 20px 0;
-}
-
-/* Ürün Kartı Stilleri */
-.product-card {
-    background: #161b22;
+#language-select {
+    padding: 8px 12px;
     border: 1px solid #30363d;
-    border-radius: 10px;
+    border-radius: 5px;
+    background-color: #161b22;
+    color: #c9d1d9;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Yeni: Modal (Açılır Pencere) Stilleri */
+.modal {
+    display: none; /* Varsayılan olarak gizli */
+    position: fixed; 
+    z-index: 200; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.7); /* Hafif karartılmış arka plan */
+}
+
+.modal-content {
+    background-color: #0d1117;
+    margin: 15% auto; /* Ortalamak için */
     padding: 20px;
+    border: 1px solid #30363d;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.product-image-container {
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
+.close-button:hover,
+.close-button:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.product-image {
-    max-width: 100px;
-    max-height: 100px;
-    object-fit: contain;
+#contact-username {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #30363d;
+    background-color: #21262d;
+    color: #c9d1d9;
 }
 
-.product-name {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #4CAF50; /* Fruit'ler için yeşil vurgu */
-    font-weight: 600;
-}
-
-/* Fiyat ve Robux İkonu */
-.price-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    font-size: 1.4em;
-    font-weight: 800;
-    color: #007bff; /* Mavi fiyat vurgusu */
-}
-
-.robux-icon {
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-}
-
-/* Satın Alma Butonu */
-.buy-button {
-    background-color: #007bff; /* Mavi buton */
+#modal-confirm-button {
+    /* Buy butonunun stilini kullanabiliriz */
+    background-color: #4CAF50; /* Yeşil buton */
     color: white;
     border: none;
     padding: 10px 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
     transition: background-color 0.3s;
+    margin-top: 10px;
     font-weight: 600;
 }
 
-.buy-button:hover {
-    background-color: #0056b3;
+#modal-confirm-button:hover {
+    background-color: #45a049;
 }
 
-/* Footer Stilleri */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    border-top: 1px solid #30363d;
-    font-size: 0.9em;
+#modal-warning {
+    font-size: 0.8em;
     color: #8b949e;
+    margin-top: 15px;
 }
 
-/* Gamepassler için farklı bir stil (Opsiyonel) */
-.product-card[data-type="gamepass"] .product-name {
-    color: #FFD700; /* Altın rengi */
-}
-
-/* Emoji yerine resim kullanıldığını varsayıyoruz. */
+/* ... (Geri kalan önceki CSS kodunuz) ... */
