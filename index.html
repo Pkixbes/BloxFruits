@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="en"> <head>
+<html lang="en"> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">Blox Fruits Market | Buy Fruits with Robux</title>
+    <title>Blox Fruits Market | Buy Fruits with Robux</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/7e/Roblox_2022_logo.svg" type="image/svg+xml">
 </head>
 <body>
     
-    <div class="lang-selector">
-        <button data-lang="tr" class="lang-button">🇹🇷 TR</button>
-        <button data-lang="en" class="lang-button active">🇺🇸 EN</button>
-    </div>
     <header>
         <div class="container">
-            <h1 id="header-main">Blox Fruits **Pazarı**</h1> 
-            <p id="header-sub">En nadir Fruit'leri ve Gamepass'leri en iyi Robux fiyatlarıyla bul!</p>
+            <h1>Blox Fruits **Market**</h1> 
+            <p>Find the rarest Fruits and Gamepasses at the best Robux prices!</p>
         </div>
     </header>
 
@@ -25,18 +22,25 @@
             </section>
     </main>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Blox Fruits Market. All Rights Reserved. | This site is not officially affiliated with Roblox or Blox Fruits.</p>
+        </div>
+    </footer>
+
     <div id="purchase-modal" class="modal">
         <div class="modal-content">
             <span class="close-button" id="close-modal">&times;</span>
-            <h2 id="modal-title">Satın Alma İşlemi</h2>
-            <p id="modal-text-1">Seçilen Ürün: <strong id="modal-fruit-name"></strong></p>
-            <p id="modal-text-2">Lütfen iletişime geçmek için Discord/Roblox kullanıcı adınızı girin:</p>
-            <input type="text" id="contact-username" placeholder="Discord/Roblox Kullanıcı Adınız">
-            <button id="modal-confirm-button" data-discord-url="KENDİ_DISCORD_DAVET_LINKINIZ">Talebi Gönder & Discord'a Git</button>
-            <p id="modal-warning">Not: Satın alma, Discord üzerinden yöneticilerle iletişim kurularak tamamlanacaktır.</p>
+            <h2 id="modal-title">Purchase Request</h2>
+            <p>Selected Item: <strong id="modal-fruit-name"></strong></p>
+            <p>Please enter your Discord/Roblox username for contact:</p>
+            
+            <input type="text" id="contact-username" placeholder="Discord/Roblox Username">
+            
+            <button id="modal-confirm-button">Submit Request & Go to Discord</button>
+            <p id="modal-warning">Note: Purchase will be completed by contacting administrators via Discord.</p>
         </div>
     </div>
-    
     <script src="script.js"></script>
 </body>
 </html>
