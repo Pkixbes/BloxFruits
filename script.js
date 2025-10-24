@@ -1,45 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // =======================================================
-    // ** BU BÖLÜMLER GÜNCELLENDİ **
+    // ** DİKKAT: GÜNCEL WEBHOOK VE DAVET LİNKLERİNİZ **
     // =======================================================
-    // 1. DİKKAT: Bu URL Discord Webhook URL'niz olmalıdır.
     const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1431323542892318892/ucAICMTpz9q_LXh3k0RvDbhoirPSmJR2uQHHvxl8UTAJnbRU8VsbxmXr4LyxGOO3GYn4"; 
-    // 2. DİKKAT: Bu URL Discord sunucunuzun davet linki olmalıdır.
     const DISCORD_INVITE_URL = "https://discord.gg/ZDgZbTDurG"; 
     // =======================================================
 
-    // Ürün verileriniz (İngilizce isimler kullanıldı)
+    // Ürün verileriniz (İngilizce isimler ve WebP uzantısı kullanıldı)
     const products = [
-        { name: "West Dragon", robux: 2632, image: "westdragon.png", type: "fruit" },
-        { name: "Dragon", robux: 2388, image: "dragon.png", type: "fruit" },
-        { name: "Kitsune", robux: 850, image: "kitsune.png", type: "fruit" },
-        { name: "Yeti", robux: 422, image: "yeti.png", type: "fruit" },
-        { name: "Fruit Notifier", robux: 2500, image: "fruit_notifier.png", type: "gamepass" },
-        { name: "Purple Lighting", robux: 1471, image: "purplelighting.png", type: "fruit" },
-        { name: "2x Mastery", robux: 400, image: "2xmastery.png", type: "gamepass" },
-        { name: "2x Money", robux: 400, image: "2xmoney.png", type: "gamepass" },
-        { name: "2x Boss Drops", robux: 311, image: "2xbossdrops.png", type: "gamepass" },
-        { name: "Fruit Storage", robux: 369, image: "fruitstorage.png", type: "gamepass" },
-        { name: "Darkblade", robux: 1107, image: "darkblade.png", type: "gamepass" },
-        { name: "Celestial Pain", robux: 484, image: "celestialpain.png", type: "fruit" },
-        { name: "Yellow Lighting", robux: 432, image: "yellowlighting.png", type: "fruit" },
-        { name: "Sadness Pain", robux: 363, image: "sadnesspain.png", type: "fruit" },
-        { name: "Torment Pain", robux: 363, image: "tormentpain.png", type: "fruit" },
-        { name: "Red Lightning", robux: 346, image: "redlighting.png", type: "fruit" },
-        { name: "Green Lighting", robux: 294, image: "greenlighting.png", type: "fruit" },
-        { name: "Frustration Pain", robux: 294, image: "frustrationpain.png", type: "fruit" },
-        { name: "Super Spirit Pain", robux: 294, image: "superspiritpain.png", type: "fruit" },
-        { name: "Fast Boats", robux: 311, image: "fastboats.png", type: "gamepass" }
+        // NOT: Gamepass ve Fruit resim adları küçük harf ve boşluksuz hale getirildi (.webp uzantısı ile)
+        { name: "West Dragon", robux: 2632, image: "westdragon.webp", type: "fruit" },
+        { name: "Dragon", robux: 2388, image: "dragon.webp", type: "fruit" },
+        { name: "Kitsune", robux: 850, image: "kitsune.webp", type: "fruit" },
+        { name: "Yeti", robux: 422, image: "yeti.webp", type: "fruit" },
+        { name: "Fruit Notifier", robux: 2500, image: "fruitnotifier.webp", type: "gamepass" },
+        { name: "Purple Lighting", robux: 1471, image: "purplelightning.webp", type: "fruit" },
+        { name: "2x Mastery", robux: 400, image: "2xmastery.webp", type: "gamepass" },
+        { name: "2x Money", robux: 400, image: "2xmoney.webp", type: "gamepass" },
+        { name: "2x Boss Drops", robux: 311, image: "2xbossdrops.webp", type: "gamepass" },
+        { name: "Fruit Storage", robux: 369, image: "fruitstorage.webp", type: "gamepass" },
+        { name: "Darkblade", robux: 1107, image: "darkblade.webp", type: "gamepass" },
+        { name: "Celestial Pain", robux: 484, image: "celestialpain.webp", type: "fruit" },
+        { name: "Yellow Lighting", robux: 432, image: "yellowlightning.webp", type: "fruit" },
+        { name: "Sadness Pain", robux: 363, image: "sadnesspain.webp", type: "fruit" },
+        { name: "Torment Pain", robux: 363, image: "tormentpain.webp", type: "fruit" },
+        { name: "Red Lightning", robux: 346, image: "redlightning.webp", type: "fruit" },
+        { name: "Green Lighting", robux: 294, image: "greenlightning.webp", type: "fruit" },
+        { name: "Frustration Pain", robux: 294, image: "frustrationpain.webp", type: "fruit" },
+        { name: "Super Spirit Pain", robux: 294, image: "superspiritpain.webp", type: "fruit" },
+        { name: "Fast Boats", robux: 311, image: "fastboats.webp", type: "gamepass" }
     ];
-
-    // ... (Geri kalan tüm JavaScript kodu aynı kalmalıdır) ...
-    // Modalların açılıp kapanması ve webhook gönderme mantığı buraya gelir.
-    
-    // (*** Geri kalan JavaScript kodunu buraya ekleyin ***)
-    
-// (Önceki cevabımdaki tüm kodu alıp bu dosyaya yapıştırdığınızdan emin olun.)
-// ... (Tüm fonksiyonlar ve olay dinleyicileri) ...
 
     // DOM Elementleri
     const listingContainer = document.getElementById('fruits-listing');
