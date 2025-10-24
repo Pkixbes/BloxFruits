@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Ürün verileriniz (İngilizce isimler ve WebP uzantısı kullanıldı)
     const products = [
-        // NOT: Gamepass ve Fruit resim adları küçük harf ve boşluksuz hale getirildi (.webp uzantısı ile)
+        // NOT: Resim yolları küçük harf ve boşluksuz hale getirildi (.webp uzantısı ile)
         { name: "West Dragon", robux: 2632, image: "westdragon.webp", type: "fruit" },
         { name: "Dragon", robux: 2388, image: "dragon.webp", type: "fruit" },
         { name: "Kitsune", robux: 850, image: "kitsune.webp", type: "fruit" },
