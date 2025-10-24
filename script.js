@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // =======================================================
     // ** DEĞİŞTİRMENİZ GEREKEN YERLER **
     // =======================================================
-    const DISCORD_WEBHOOK_URL = "KENDİ_DISCORD_WEBHOOK_URL'niz"; // Webhook URL'si
-    const DISCORD_INVITE_URL = "KENDİ_DISCORD_DAVET_LINKINIZ"; // Davet linki
+    const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1431323542892318892/ucAICMTpz9q_LXh3k0RvDbhoirPSmJR2uQHHvxl8UTAJnbRU8VsbxmXr4LyxGOO3GYn4"; // Webhook URL'si
+    const DISCORD_INVITE_URL = "https://discord.gg/ZDgZbTDurG"; // Davet linki
     // =======================================================
 
     // Çeviri Verisi (TR varsayılan, EN eklenmiştir)
